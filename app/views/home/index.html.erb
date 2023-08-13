@@ -1,2 +1,36 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="min-w-[600px] py-8 border-solid border-2 border-slate-600 p-4 rounded shadow-xl">
+  <div class="flex rounded bg-gray-800 p-4 mb-4 flex-row-reverse">
+    <button class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
+      New
+    </button>
+  </div>
+  <ul role="list">
+    <li class="flex justify-between gap-x-6 py-5 hover:bg-gray-800 active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 rounded p-4 cursor-pointer">
+      <div class="flex min-w-0 gap-x-4">
+        <%= image_tag("ruby", size: '24x24') %>
+        <div class="min-w-0 flex-auto">
+          <p class="text-sm font-semibold leading-6 text-white-900">Leslie Alexander</p>
+          <p class="mt-1 truncate text-xs leading-5 text-white-500">leslie.alexander@example.com</p>
+        </div>
+      </div>
+      <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+        <p class="text-sm leading-6 text-white-900">Co-Founder / CEO</p>
+        <p class="mt-1 text-xs leading-5 text-white-500">Last seen <time datetime="2023-01-23T13:23Z">3h ago</time></p>
+      </div>
+    </li>
+    <li class="flex justify-between mt-4 gap-x-6 py-5 hover:bg-gray-800 active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 rounded p-4 cursor-pointer">
+      <div class="flex min-w-0 gap-x-4">
+        <%= image_tag("ruby", size: '24x24') %>
+        <div class="min-w-0 flex-auto">
+          <p class="text-sm font-semibold leading-6 text-white-900">Leslie Alexander</p>
+          <p class="mt-1 truncate text-xs leading-5 text-white-500">leslie.alexander@example.com</p>
+        </div>
+      </div>
+      <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+        <p class="text-sm leading-6 text-white-900">Co-Founder / CEO</p>
+        <p class="mt-1 text-xs leading-5 text-white-500">Last seen <time datetime="2023-01-23T13:23Z">3h ago</time></p>
+      </div>
+    </li>
+  </ul>
+</div>
