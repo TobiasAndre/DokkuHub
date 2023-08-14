@@ -1,6 +1,6 @@
 class Service < ApplicationRecord
   enum service_type: { 
-    postgres: 'service',
+    postgres: 'postgres',
     redis: 'redis',
     memcached: 'memcached',
     mongodb: 'mongodb',

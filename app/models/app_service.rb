@@ -1,4 +1,4 @@
 class AppService < ApplicationRecord
   belongs_to :app
-  has_many :services, dependent: :destroy
+  belongs_to :service
 end

@@ -29,3 +29,15 @@ end
 ].each do |service|
   Service.find_or_create_by(service)
 end
+
+meuAppRails = {
+  name: 'Meu App Rails',
+  description: 'Meu primeiro app Rails',
+  url: 'https://meu-app-rails.herokuapp.com',
+  is_active: true,
+  is_locked: false,
+}
+
+meuAppRails = App.find_or_create_by(meuAppRails)
+meuAppRails.app_buildpacks.create(buildpack_id: Buildpack.find_by(name: 'Ruby').id, position: 0)
+meuAppRails.app_services.create(service_id: Service.find_by(name: 'Postgres').id, name: 'Postgres')
